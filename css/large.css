@@ -1,0 +1,26 @@
+/* For screens larger than 1300 pixels */
+
+@media screen and (min-width: 1300px) {
+    
+    /* Margin the content div */
+    .content {
+        max-width: 97vw;
+        margin: 15px auto;
+        border-radius: 10px;
+    }
+
+    /* Style the hero image */
+    .hero-content__hero-img {
+        max-height: 80vh;
+    }
+
+    iframe {
+        min-height: 60vh;
+        max-height: 60vh;
+    }
+
+    .logo {
+        width: 220px;
+    }
+
+}

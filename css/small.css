@@ -1,0 +1,242 @@
+/* For styling mobile screens and all general cross-site styles */
+
+/* Font Styles used on this site */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Rowdies:wght@700&display=swap');
+
+/* ---------- General Cross-site Styles ------------- */
+
+/* Border box every container */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Remove underline from all links */
+a {
+    text-decoration: none;
+}
+
+/* Provide a background colour for the content div */
+.content {
+    background-color: #FF7F11;
+    padding-top: 20px;
+    font-family: 'Karla', sans-serif;
+    color: #062357;
+    font-size: 1.3rem;
+}
+
+/* Pad the main content container */
+.main-content {
+    padding: 0 15px 15px 15px;
+}
+
+/* Flex Display all desired elements/containers */
+.site-header,
+.site-navigation__links-list {
+    display: flex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rowdies', cursive;
+}
+
+/* Centre align all headings & other desired content */
+h1, h2, h3, h4, h5, h6,
+.site-footer,
+.list-item__site-link,
+.form-para,
+.cta-box {
+    text-align: center;
+}
+
+/* Apply a Border Radius to all desired elements */
+.site-img,
+.contact-form,
+.form-input,
+.form-textarea,
+.form-button {
+    border-radius: 10px;
+}
+
+/* Centre align the logo if so desired */
+.site-header {
+    justify-content: space-around;
+}
+
+/* Set the site logo to the appropriate width & space it
+appropriately from the site name */
+.logo {
+    width: 180px;
+}
+
+/* Centre align the site link */
+.home-link {
+    align-items: center;
+}
+
+/* remove margin, list style, and padding from nav ul
+& position ul elements as desired  */
+.site-navigation__links-list {
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    justify-items: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+}
+
+/* Make the navigation bar sticky or position as desired */
+.site-navigation {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #062357;
+    transition: ease-in-out;
+}
+
+/* Span width of each list item */
+.links-list__list-item {
+    width: 100%; 
+}
+
+/* display links in nav bar as block for proper alignment */
+.list-item__site-link {
+    transition-duration: .5s;
+    padding: 20px 5px;
+    display: block;
+    color: #D0E0E7;
+}
+
+/* Set desired colours when hovering over nav links */
+.list-item__site-link:hover {
+    background-color: #D0E0E7;
+    color: #062357;
+}
+
+/* Set styles for when a nav link is clicked */
+.list-item__site-link:active {
+    background-color: #3A77E7;
+    transition: none;
+}
+
+/* ---------------- Homepage Styles ---------------- */
+
+/* Style the hero image */
+.hero-content__hero-img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* ----------- Contact Form Styles ------------- */
+
+/* Style the contact info box */
+.cta-box {
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    background-color: #062357;
+    color: #FF7F11;
+}
+
+/* */
+.cta-box__cell-num, .cta-box__email {
+    color: inherit;
+}
+
+.cta-box__cell-num:hover, .cta-box__email:hover {
+    text-decoration: underline;
+}
+
+.cta-box__cell-num:active, .cta-box__email:active {
+    color: #D0E0E7;
+}
+
+.map-location {
+    padding: 0;
+    margin: 0;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50vh;
+    max-height: 50vh;
+}
+
+.figcap {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style the contact form */
+.contact-form {
+    width: 90vw;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #062357;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.form-input {
+    height: 60px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: inherit;
+    background-color: #062357;
+    color: #D0E0E7;
+    font-size: 1.1rem;
+}
+
+.form-textarea {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 100%;
+}
+
+/* .form-input::placeholder,
+.form-textarea::placeholder {
+} */
+
+.form-button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    background-color: #062357;
+    color: #D0E0E7;
+    border: 5px outset #062357;
+}
+
+.form-button:active {
+    border: 5px inset #C4C10C;
+    background-color: #D0E0E7;
+    color: #062357;
+}
+
+.site-footer {
+    background-color: #062357;
+    color: #D0E0E7;
+    padding: 20px 0;
+}
