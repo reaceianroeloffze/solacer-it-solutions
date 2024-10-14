@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6,
 .contact-form,
 .form-input,
 .form-textarea,
-.form-button {
+.site-button {
     border-radius: 10px;
 }
 
@@ -122,12 +122,34 @@ appropriately from the site name */
     transition: none;
 }
 
+/* Set general styles for buttons on website */
+.site-button {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-family: inherit;
+    background-color: #062357;
+    color: #D0E0E7;
+    border: 5px outset #062357;
+}
+
+/* Set styles for active site buttons */
+.form-button:active {
+    border: 5px inset #C4C10C;
+}
+
 /* ---------------- Homepage Styles ---------------- */
 
 /* Style the hero image */
 .hero-content__hero-img {
     max-width: 100%;
     min-width: 100%;
+}
+
+.page-link {
+    color: #D0E0E7;
 }
 
 /* ----------- Contact Form Styles ------------- */
@@ -164,10 +186,8 @@ iframe {
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-    min-width: 100%;
     max-width: 100%;
-    min-height: 50vh;
-    max-height: 50vh;
+    max-height: 40vh;
 }
 
 .figcap {
@@ -230,7 +250,6 @@ iframe {
 }
 
 .form-button:active {
-    border: 5px inset #C4C10C;
     background-color: #D0E0E7;
     color: #062357;
 }
